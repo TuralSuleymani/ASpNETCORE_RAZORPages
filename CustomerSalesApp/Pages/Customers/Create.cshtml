@@ -1,0 +1,21 @@
+﻿@page
+@model CustomerSalesApp.Pages.Customers.CreateModel
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="form-group">
+        <label asp-for="Customer.CompanyName" class="col-form-label"></label>
+        <input asp-for="Customer.CompanyName" class="form-control">
+        <span asp-validation-for="Customer.CompanyName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.ContractName" class="col-form-label"></label>
+        <input asp-for="Customer.ContractName" class="form-control">
+        <span asp-validation-for="Customer.ContractName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.ContractTitle" class="col-form-label"></label>
+        <input asp-for="Customer.ContractTitle" class="form-control">
+        <span asp-validation-for="Customer.ContractTitle"></span>
+    </div>
+    <input type="submit" value="Create" class="btn btn-success">
+</form>
